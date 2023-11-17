@@ -1,0 +1,7 @@
+<div class="m-5 p-5 flex flex-col">
+  <mat-form-field>
+    <mat-label>Company Name or Number</mat-label>
+    <input matInput [formControl]="searchInput">
+  </mat-form-field>
+  <button mat-raised-button (click)="search()">search</button>
+</div>

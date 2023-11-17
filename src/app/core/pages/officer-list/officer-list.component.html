@@ -1,0 +1,16 @@
+<div class="m-6">
+    <p class="text-4xl">{{company?.title}} - Officers</p>
+    <p>Company number <span class="font-bold">{{company?.company_number}}</span></p>
+
+
+@for (officer of officers; track officer.name) {
+    <div class="my-3">
+        <p class="font-bold">{{officer.name}}</p>
+        <p>{{officer.officer_role}}</p>
+    </div>
+} @empty {
+No results found
+}
+
+
+</div>
